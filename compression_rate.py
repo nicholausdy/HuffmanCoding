@@ -17,3 +17,4 @@ def compute_space_saving_ratio(ori_text, comp_text):
     comp_size = len(comp_text)
     comp_ratio = 1 - comp_size / ori_size
     return comp_ratio, ori_size, comp_size
+    

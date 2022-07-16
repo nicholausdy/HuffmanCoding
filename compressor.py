@@ -47,11 +47,3 @@ class HuffmanCompressor():
         for char in text:
             compressed_text = compressed_text + self.code_word_table[char]
         return compressed_text
-
-
-
-
-    
-
-        
-

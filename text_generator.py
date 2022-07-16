@@ -33,6 +33,3 @@ class RandomText():
         text_generator.randomly_generate_text(length)
         return text_generator.text
         
-
-
-
