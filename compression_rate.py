@@ -6,9 +6,9 @@ def compute_kl_distance(assumed_model, actual_model, bits= False):
         assumed_prob = assumed_percentage / 100
         actual_prob = actual_model[char] / 100
         if (not(bits)):
-            distance = assumed_prob * math.log(assumed_prob / actual_prob)
+            distance = actual_prob * math.log(actual_prob / assumed_prob)
         else:
-            distance = assumed_prob * math.log2(assumed_prob / actual_prob)
+            distance = actual_prob * math.log2(actual_prob / assumed_prob)
         sum_of_distance = sum_of_distance + distance  
     return sum_of_distance
 
